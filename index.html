@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин детской одежды</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="logo">Анжела - Детский магазин</div>
+    <nav class="nav">
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <!-- Кнопка для гамбургер-меню -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <!-- Боковая панель -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#">Школа</a></li>
+      <li><a href="#">Зима</a></li>
+      <li><a href="#">Лето</a></li>
+      <li><a href="#">Распродажа</a></li>
+      <li><a href="#">Новинки</a></li>
+      <li><a href="#">Бренды</a></li>
+    </ul>
+  </div>
+
+  <!-- Контейнер с контентом -->
+  <div class="container">
+    <main class="main-content">
+      <!-- Баннер -->
+      <section class="banner">
+        <h1>Добро пожаловать в наш магазин!</h1>
+        <p>Все для вашего ребенка, от одежды до аксессуаров.</p>
+        <button>Посмотреть товары</button>
+      </section>
+
+      <!-- Категории -->
+      <section class="categories">
+        <h2>Наши категории</h2>
+        <div class="category">
+          <h3>Школа</h3>
+          <p>Качественная форма и аксессуары для учебы.</p>
+        </div>
+        <div class="category">
+          <h3>Зима</h3>
+          <p>Теплая одежда и обувь для зимнего сезона.</p>
+        </div>
+        <div class="category">
+          <h3>Лето</h3>
+          <p>Легкая и удобная одежда для жарких дней.</p>
+        </div>
+        <div class="category">
+          <h3>Распродажа</h3>
+          <p>Скидки на лучшие товары!</p>
+        </div>
+      </section>
+
+      <!-- Галерея -->
+      <section class="gallery">
+        <img src="img/girl1.jpg" alt="Товар 1">
+        <img src="img/girl2.jpg" alt="Товар 2">
+        <img src="img/man1.jpg" alt="Товар 3">
+        <img src="img/man2.jpg" alt="Товар 4">
+      </section>
+    </main>
+  </div>
+
+  <!-- Подключение JavaScript -->
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open'); // Переключение класса 'open' на боковой панели
+    }
+  </script>
+  
+</body>
+</html>
